@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build and push the image
-      run: | 
-      docker login --username riley-momo --password ${{ secrets.GHCR_PAT }} ghcr.io
-      docker buildx build -f .devcontainer/Dockerfile -t ghcr.io/riley-momo/ghcr-test:latest
-      docker push ghcr.io/riley-momo/ghcr-test:latest
+        run: |
+          docker login --username riley-momo --password ${{ secrets.GHCR_PAT }} ghcr.io
+          docker buildx build -f .devcontainer/Dockerfile -t ghcr.io/riley-momo/ghcr-test:latest .
+          docker push ghcr.io/riley-momo/ghcr-test:latest
