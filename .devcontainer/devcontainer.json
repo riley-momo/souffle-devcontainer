@@ -1,0 +1,14 @@
+{
+    "name": "Souffle Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": []
+        }
+    },
+    "remoteUser": "dev"
+}

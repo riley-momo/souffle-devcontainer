@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "souffle"
+version = "0.1.0"
+description = "Minimal Python wrapper around the Souffle CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Souffle Tests" }]
+
+[tool.setuptools]
+packages = ["souffle"]

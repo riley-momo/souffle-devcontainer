@@ -1,0 +1,11 @@
+.decl Parent(x:symbol, y:symbol)
+.output Parent
+
+.decl Ancestor(x:symbol, y:symbol)
+.output Ancestor
+
+Ancestor(x, y) :- Parent(x, y).
+Ancestor(x, z) :- Parent(x, y), Ancestor(y, z).
+
+Parent("alice", "bob").
+Parent("bob", "carol").
