@@ -1,0 +1,2 @@
+docker-compose.yml
+.github/workflows/publish-ghcr.yaml

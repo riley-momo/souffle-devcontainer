@@ -9,6 +9,10 @@ description = "Minimal Python wrapper around the Souffle CLI"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Souffle Tests" }]
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+]
 
 [tool.setuptools]
 packages = ["souffle"]
